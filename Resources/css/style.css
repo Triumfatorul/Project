@@ -1,0 +1,166 @@
+a {
+    color:blue;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: inherit; 
+    font-family: sans-serif;
+    padding: 5px;   
+    border: 3px solid transparent;
+    margin-left: 30px;            
+}
+
+a:hover{
+    border-radius: 15px;
+    border: 3px solid rgb(0, 162, 255);
+}
+
+
+
+body{
+    background-color: #eeeeee;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;    
+    grid-gap: 10px;
+}
+
+.content .post {
+    background-color: rgba(255, 255, 255, 0.651);   
+    height: 100px;
+}
+
+
+
+small {
+    margin-left: 30px; 
+    font-family: cursive; 
+    padding: 5px;   
+    border: 3px solid transparent;
+}
+
+.post  {
+    background-color: rgba(255, 255, 255, 0.651); 
+    height: 380px;  
+}
+
+.post h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-family: sans-serif;    
+}
+
+.post p {
+    padding: 35px;
+    font-family: sans-serif;
+}
+
+.post .edit {
+    text-align: left; 
+}
+
+.post .delete{
+    color: red;
+}
+
+h1 {
+    display: inline;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    animation-name: drop-h1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drop-h1{
+    0%{margin-top: -100px;}
+    100%{margin-top: 150px;}
+}
+
+.content .info p {
+    text-align: center;
+    font-family: cursive;
+}
+
+@keyframes show {
+    0%{visibility: hidden;}
+    100%{visibility: visible;}
+}
+
+.info {
+    position: fixed;
+    width: 300px;
+    left: 39%;
+    top: 28%;
+    visibility: hidden;
+    animation-name: show;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;      
+    text-align: center;
+    
+}
+
+.info .links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.info .links a:link {
+    margin-left: 0px;
+}
+
+.form {
+    width: 300px;
+}
+
+input {
+    width: 100%;
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.651);
+    font-family: cursive;  
+}
+
+input:focus {
+    border: 1px solid rgb(0, 162, 255);
+}
+
+textarea {
+    width: 100%;
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.651);
+    font-family: cursive;  
+}
+
+button {
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-family: cursive;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.651);
+}
+
+button:hover {
+    border: 2px solid rgb(0, 162, 255);
+}
+
+.form p {
+    display: inline;
+    font-family: sans-serif;      
+    margin-left: 30px;
+}
